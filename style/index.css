@@ -41,7 +41,8 @@ blockquote, q {
   padding:0;
   margin:0;
   max-width:100%; /*makes it so that elements can never be bigger than their parents. stops horizontal scrollbar.*/
-  border:1px solid grey;
+  /* border:1px solid grey; */
+  font-family: 'Bebas Neue', cursive;
   }
 /*General Styles (great to use until you have a preference)*/
 html{
@@ -52,10 +53,11 @@ body{
   line-height:1.5; /*takes the font size and multiplies it by this number to add space between lines*/
   color:#4f4f4f;
   width:100%;
+  background-color:ivory;
 }
 h1{
-font-size:5rem;
-color:white;
+font-size:10rem;
+color:firebrick;
 }
 h2{
 font-size:2.5rem;
@@ -65,7 +67,7 @@ text-decoration: none;
 color:#4f4f4f;
 }
 section{
-    padding: 4% 0;
+    padding: 2% 0;
 }
 /* Header Section Styles */
 header{
@@ -79,6 +81,7 @@ header{
     background-repeat: no-repeat;
     background-position:15% 85%;
     text-align:center;
+    margin:0 5%;
 
 }
 nav{
@@ -86,6 +89,7 @@ nav{
     justify-content:space-between;
     align-items: center;
     width:100%;
+    padding:1vh;
 }
 /* first section styles */
 .container{
@@ -97,58 +101,82 @@ nav{
 .container div{
     width:27%;
 }
+.container p{
+    text-align:center;
+    font-size:2.5rem;
+    color:firebrick;
+}
 /*images section*/
-.one{
+.one div{
     background-image: url('../images/one.jpg');
     height:40vh;
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:top;
     margin:5%;
+    transform-origin: 100% 100%;
 }
-
-/* .two{
+.two div{
     background-image: url('../images/two.jpg');
     height:40vh;
     width:100%;
-    background-size:cover;
+    background-size:auto;
     background-repeat:no-repeat;
     margin:5%;
+    background-position:bottom;
+    transform-origin: 100% 100%
 }
-.three{
+.three div{
     background-image: url('../images/three.jpg');
     height:40vh;
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
     margin:5%;
+    background-position:40% 50%;
 }
-.four{
+.four div{
     background-image: url('../images/four.jpg');
     height:40vh;
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:40% 50%;
     margin:5%;
 }
-.five{
+.five div{
     background-image: url('../images/five.jpg');
     height:40vh;
     width:100%;
-    background-size:cover;
+    background-size:auto;
     background-repeat:no-repeat;
     margin:5%;
+    background-position: 50% 30%;
+    transform-origin: 100% 100%;
 }
-.six{
+.six div{
     background-image: url('../images/six.jpg');
     height:40vh;
     width:100%;
     background-size:cover;
     background-repeat:no-repeat;
     margin:5%;
-} */
-footer{
-    background-color:wheat;
-    text-align:center;
-    text-decoration:none;
+    background-position:40% 50%;
+}
+footer {
+    display: flex;
+    text-align: center;
+    background-color:antiquewhite;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+padding: 1vh;
+border-radius:10px;
+}
+button:hover{
+    color:indianred;
 }
