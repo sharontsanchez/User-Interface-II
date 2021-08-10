@@ -194,6 +194,7 @@ button:hover{
 .contact{
   font-size:1.6rem;
   font-family: 'Hahmlet', serif;
+  margin: 0 auto;
 }
 .contact p{
   font-size:1.6rem;
@@ -262,4 +263,6 @@ h1{
     width:80%;
     margin: 0 auto;
   }
+  /* contact page */
+
 }
